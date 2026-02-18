@@ -125,3 +125,18 @@
     @apply bg-background text-foreground;
   }
 }
+.mySwiper {
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 12px;
+    border-radius: 5px;
+    background-color: #ccc;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--primary);
+    width: 20px;
+  }
+
+}
