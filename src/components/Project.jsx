@@ -3,13 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
-import project3 from "../assets/project3.png";
+import project1 from "../assets/project1.PNG";
+import project2 from "../assets/project2.PNG";
+import project3 from "../assets/project3.PNG";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
-import project6 from "../assets/project6.png";
-import project7 from "../assets/project7.png";
+import project6 from "../assets/project6.PNG";
+import project7 from "../assets/project7.PNG";
 
 export default function Project() {
   const project = [
