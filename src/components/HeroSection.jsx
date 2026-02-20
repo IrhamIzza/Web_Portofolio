@@ -1,12 +1,12 @@
 import foto from "../assets/coba.png";
-
+import { Button } from "./ui/button";
 export default function HeroSection() {
   return (
     <div
       className="flex flex-col sm:flex-row py-10 items-center gap-3 animate-fadeInUp px-30"
       id="home"
     >
-      <div className="flex-1 flex flex-col gap-3 ">
+      <div className="flex-1 flex flex-col gap-5 ">
         <div className="font-bold text-4xl">
           Hi,I'm{" "}
           <span className="text-blue-400 inline-block transition-all duration-300 hover:scale-105">
@@ -29,13 +29,13 @@ export default function HeroSection() {
             className="ph ph-linkedin-logo text-lg transition-all duration-300 ease-out hover:scale-105 hover:text-blue-400"
           ></a>
         </div>
-        <div className="flex gap-2 text-sm md:text-base text-blue-400">
-          <div className="bg-blue-500 text-white p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
-            CONTACT
-          </div>
-          <div className="border border-blue-400 p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
-            DONWLOAD CV
-          </div>
+        <div className="flex gap-2 text-sm md:text-base">
+          <a href="https://wa.me/62895367186697" target="blank">
+            <Button>Contact</Button>
+          </a>
+          <a href="#project">
+            <Button variant="secondary">View My Project</Button>
+          </a>
         </div>
       </div>
       <div className="flex-1 relative">
@@ -44,6 +44,7 @@ export default function HeroSection() {
           src={foto}
           className="relative z-20 rounded-md w-56 sm:w-[300px] mx-auto"
           alt=""
+          loading="lazy"
         />
       </div>
     </div>
