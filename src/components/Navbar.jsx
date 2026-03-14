@@ -15,38 +15,18 @@ export default function Navbar() {
     <nav className="p-4 ">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-blue-400 text-3xl font-bold">Desain Interior</div>
+        <div className="text-blue-400 text-3xl font-bold">Web Portofolio</div>
 
         {/* Menu */}
         <ul className="hidden sm:flex gap-6 font-medium text-[25px] tracking-wide">
           <li>
             <NavLink to="/" end className={navClass}>
-              Beranda
+              Home
             </NavLink>
           </li>
           <li>
             <NavLink to="/tentang" className={navClass}>
-              Tentang
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/kategori" className={navClass}>
-              Kategori
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/testimoni" className={navClass}>
-              Testimoni
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/kontak" className={navClass}>
-              Kontak
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/kontak" className={navClass}>
-              Konsultasi
+              About Me
             </NavLink>
           </li>
         </ul>
