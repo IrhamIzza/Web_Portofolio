@@ -72,7 +72,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="px-30 py-10">
+    <div className="px-30 py-10" id="project">
       <div className="flex flex-col ">
         <h1 className="text-3xl font-bold text-center">
           {" "}
