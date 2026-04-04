@@ -1,5 +1,5 @@
-import logoLaravel from "../assets/Logo/laravel.png";
-import logoTailwind from "../assets/Logo/tailwind.png";
+import logoLaravel from "../assets/Logo/Laravel.png";
+import logoTailwind from "../assets/Logo/Tailwind.png";
 import logoVue from "../assets/Logo/vue.png";
 
 export default function Skill() {
