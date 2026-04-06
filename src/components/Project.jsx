@@ -72,7 +72,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="px-30 py-10" id="project">
+    <div className="px-4 md:px-10 lg:px-20 py-10" id="project">
       <div className="flex flex-col ">
         <h1 className="text-3xl font-bold text-center">
           {" "}
@@ -80,13 +80,24 @@ export default function Project() {
         </h1>
         <div>
           <Swiper
-            spaceBetween={30}
-            slidesPerView={3}
-            autoplay={{ delay: 10000 }}
-            pagination={{
-              clickable: true,
-            }}
+            spaceBetween={20}
+            autoplay={{ delay: 3000 }}
+            pagination={{ clickable: true }}
             modules={[Autoplay, Pagination]}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
             className="mySwiper"
           >
             {project.map((item, index) => (
@@ -110,7 +121,10 @@ export default function Project() {
                         </p>
                         <div className="flex gap-2 text-gray-300 text-sm font-medium">
                           {item.framework.map((item, index) => (
-                            <div key={index} className=" p-1 rounded-sm bg-cyan-600/60">
+                            <div
+                              key={index}
+                              className=" p-1 rounded-sm bg-cyan-600/60"
+                            >
                               {item}
                             </div>
                           ))}

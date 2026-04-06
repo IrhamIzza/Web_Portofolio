@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export default function HeroSection() {
   return (
     <div
-      className="flex flex-col sm:flex-row py-10 items-center gap-3 animate-fadeInUp px-30"
+      className="flex flex-col sm:flex-row py-10 items-center gap-3 animate-fadeInUp px-10 md:px-30"
       id="home"
     >
       <div className="flex-1 flex flex-col gap-5 ">
@@ -38,7 +38,7 @@ export default function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="flex-1 relative">
+      <div className="hidden md:flex flex-1 relative">
         <div className="h-90 w-90 left-[50%] -translate-x-[50%]  rounded-full bg-gradient-to-tl from-blue-400 to-indigo-800 absolute z-10"></div>
         <img
           src={foto}

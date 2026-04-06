@@ -28,7 +28,7 @@ export default function AboutMe() {
 
   return (
     <div className="bg-gradient-to-tr from-gray-700 to-indigo-900" id="about">
-      <div className="flex px-40 py-10">
+      <div className="flex px-4 md:px-40 py-10">
         <div className="flex-1 hidden sm:block  ">
           <img
             src={aku1}
